@@ -1,6 +1,6 @@
 import perfil from '../assets/perfilsolido.png'
 import growflixImg from '../assets/growflix.png'
-import rickAndMortyImg from '../assets/rickandmorty.png'
+import rickAndMortyImg from '../assets/rickAndMorty.png'
 import chatGeminiImg from '../assets/chatgemini.png'
 import growtweetImg from '../assets/growtweeter.png'
 import pokedex from '../assets/pokedex.png'
