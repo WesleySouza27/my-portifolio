@@ -19,7 +19,7 @@ export function Home() {
         <div className="flex-1 min-h-screen">
             <nav className="bg-gray-900 text-white px-4 md:px-8 py-4 flex gap-12 justify-between items-center fixed w-full z-10 shadow">
                 <span className="font-bold text-l  md:text-2xl">Wesley</span>
-                <div className="flex w-full gap-3 md:gap-8">
+                <div className="flex w-full gap-3 text-end md:gap-8">
                     <a href="#main" className="hover:text-blue-400 transition">Home</a>
                     <a href="#sobre-mim" className="hover:text-blue-400 transition">About</a>
                     <a href="#projetos" className="hover:text-blue-400 transition">Projects</a>
