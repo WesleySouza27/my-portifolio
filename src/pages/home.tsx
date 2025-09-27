@@ -17,19 +17,19 @@ import { ProjectCard } from '@/components/ProjectCard';
 export function Home() {
     return (
         <div className="flex-1 min-h-screen">
-            <nav className="bg-gray-900 text-white px-8 py-4 flex justify-between items-center fixed w-full z-10 shadow">
-                <span className="font-bold text-2xl">Wesley S.</span>
-                <div className="flex gap-8">
+            <nav className="bg-gray-900 text-white px-4 md:px-8 py-4 flex gap-12 justify-between items-center fixed w-full z-10 shadow">
+                <span className="font-bold text-l  md:text-2xl">Wesley</span>
+                <div className="flex w-full gap-3 text-end md:gap-8">
                     <a href="#main" className="hover:text-blue-400 transition">Home</a>
                     <a href="#sobre-mim" className="hover:text-blue-400 transition">About</a>
                     <a href="#projetos" className="hover:text-blue-400 transition">Projects</a>
                     <a href="#contato" className="hover:text-blue-400 transition">Contact</a>
                 </div>
             </nav>
-            <main id='main' className="h-screen flex flex-col md:flex-row items-center justify-between gap-12 pt-32 pb-16 max-w-6xl mx-auto">
+            <main id='main' className="h-screen md:h-screen flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 pt-20  md:pt-32 pb-60 md:pb-16 max-w-6xl w-full mx-auto px-4">
                 <section className="md:w-1/2 w-full ">
-                    <h1 className="text-7xl md:text-7xl font-bold mb-4">Hello I'm Wesley S.</h1>
-                    <h2 className="text-7xl md:text-4xl mb-6">I'm a software developer.</h2>
+                    <h1 className="text-4xl md:text-7xl font-bold mb-4">Hello I'm Wesley S.</h1>
+                    <h2 className="text-2xl md:text-4xl mb-6">I'm a software developer.</h2>
                     <p className="text-lg md:text-4xl mb-6 text-gray-700">I love technology and all the incredible possibilities it brings to our lives</p>
                     <div className="flex gap-4 text-blue-500 text-3xl">
                         <a href="#" className="hover:underline"><Icon path={mdiLinkedin} size={2} /></a>
@@ -38,23 +38,23 @@ export function Home() {
                     </div>
                 </section>
                 <div className="md:w-1/2 w-full flex justify-center">
-                    <img src={perfil} alt="Wesley S." className="w-48 h-48 md:w-100 md:h-100 rounded-full object-cover shadow-lg" />
+                    <img src={perfil} alt="Wesley S." className="w-70 h-70 md:w-100 md:h-100 rounded-full object-cover shadow-lg" />
                 </div>
             </main>
-            <section id='sobre-mim' className='h-screen grid grid-cols-1 md:grid-cols-2 gap-40 pt-80 max-w-6xl mx-auto py-12'>
+            <section id='sobre-mim' className='h-screen grid grid-cols-1 md:grid-cols-2 gap-40 pt-1 pr-10 pl-4 md:pt-80 max-w-6xl mx-auto py-12'>
                 <div>
-                    <h2 className="text-7xl font-bold mb-4">Sobre Mim</h2>
-                    <p className="text-7xl md:text-3xl text-gray-700">Sou um desenvolvedor de software apaixonado por criar soluções inovadoras.
+                    <h2 className="text-3xl md:text-7xl font-bold mb-4">Sobre Mim</h2>
+                    <p className="text-2xl md:text-3xl text-gray-700">Sou um desenvolvedor de software apaixonado por criar soluções inovadoras.
                         tenho experiencia em desenvolvimento web, com foco em React e Node.js.
                         atuo na criação de aplicações escaláveis e de alto desempenho.
                     </p>
                 </div>
                 <div>
-                    <h2 className="text-5xl font-bold mb-4">Habilidades</h2>
+                    <h2 className="text-center text-3xl md:text-5xl font-bold mb-4">Habilidades</h2>
                     <div className='flex  gap-8'>
                         <div className='rounded-2xl border-2 border-gray-300 p-4'>
-                            <h3 className="text-4xl font-semibold">Frontend</h3>
-                            <ul className="text-2xl list-none ml-4 text-gray-600">
+                            <h3 className="text-2xl md:text-4xl font-semibold">Frontend</h3>
+                            <ul className="text-xl md:text-3xl list-none ml-4 text-gray-600">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -65,8 +65,8 @@ export function Home() {
                             </ul>
                         </div>
                         <div className='rounded-2xl border-2 border-gray-300 p-4'>
-                            <h3 className="text-4xl font-semibold">Backend</h3>
-                            <ul className="text-2xl list-none ml-4 text-gray-600">
+                            <h3 className="text-2xl md:text-4xl font-semibold">Backend</h3>
+                            <ul className="text-xl md:text-3xl list-none ml-4 text-gray-600">
                                 <li>Node.js</li>
                                 <li>Express</li>
                                 <li>PostgreSQL</li>
@@ -78,7 +78,7 @@ export function Home() {
                     
                 </div>
             </section>
-            <section id='projetos' className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12 px-6 max-w-6xl mx-auto justify-items-center'>
+            <section id='projetos' className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12 pt-30 px-6 max-w-6xl mx-auto justify-items-center'>
                 <ProjectCard
                     title="growflix"
                     image={growflixImg}
