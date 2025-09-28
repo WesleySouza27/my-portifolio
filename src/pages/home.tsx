@@ -17,9 +17,9 @@ import { ProjectCard } from '@/components/ProjectCard';
 export function Home() {
     return (
         <div className="flex-1 min-h-screen">
-            <nav className="bg-gray-900 text-white px-4 md:px-8 py-4 flex gap-12 justify-between items-center fixed w-full z-10 shadow">
+            <nav className="bg-gray-900 text-white px-4 md:px-8 py-4 flex gap-12 justify-between items-end fixed w-full z-10 shadow">
                 <span className="font-bold text-l  md:text-2xl">Wesley</span>
-                <div className="flex w-full gap-3 text-end md:gap-8">
+                <div className="flex ml-auto gap-3 text-end md:gap-8">
                     <a href="#main" className="hover:text-blue-400 transition">Home</a>
                     <a href="#sobre-mim" className="hover:text-blue-400 transition">About</a>
                     <a href="#projetos" className="hover:text-blue-400 transition">Projects</a>
@@ -32,7 +32,7 @@ export function Home() {
                     <h2 className="text-2xl md:text-4xl mb-6">I'm a software developer.</h2>
                     <p className="text-lg md:text-4xl mb-6 text-gray-700">I love technology and all the incredible possibilities it brings to our lives</p>
                     <div className="flex gap-4 text-blue-500 text-3xl">
-                        <a href="#" className="hover:underline"><Icon path={mdiLinkedin} size={2} /></a>
+                        <a href="https://www.linkedin.com/in/wesley-souza-/" className="hover:underline"><Icon path={mdiLinkedin} size={2} /></a>
                         <a href="#" className="hover:underline"><Icon path={mdiGithub} size={2} /></a>
                         <a href="#" className="hover:underline"><Icon path={mdiInstagram} size={2} /></a>
                     </div>
